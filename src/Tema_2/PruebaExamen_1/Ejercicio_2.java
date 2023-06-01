@@ -13,15 +13,14 @@ public class Ejercicio_2 {
 
                 /** Creamos un bucle for */
                 for (int i = a; i <= b; i++) {  // Se inicializa i al valor de a y mientras sea < b, incremento +1
-                    boolean esPrimo = true;
-
-                    for (int j = 2; j <= Math.sqrt(i); j++) {
+                    boolean esPrimo = true; // cada vez que se termine el bucle, la variable vuelve a true, porque así lo necesito
+                    for (int j = 2; j <= Math.sqrt(i); j++) {  // se inicializa j a 2 y mientras sea menor a la raiz cuadrada de i
                         if (i % j == 0) {
                             esPrimo = false;
                             break;
                         }
                     }
-
+                    /** cuando termine el 2º bucle se comprueba */
                     if (esPrimo) {
                         if (primerPrimo == 0) {
                             primerPrimo = i;
@@ -35,3 +34,12 @@ public class Ejercicio_2 {
 
     }
 }
+
+
+ //  --> El primer primo a partir de un num dado n
+
+// --> El ultimo primo hasta el num dado n
+
+// ---> Todos los num primos entre n y  m
+
+// -> Luego unificar ambos
