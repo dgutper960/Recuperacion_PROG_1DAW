@@ -10,6 +10,6 @@ public class Hola_Mundo { // Nombre de la clase
         /** Vamos a recurrir al método printnl de la clase System.out
          * el método println no va a imprimir un literal por pantalla
          * (se puede llamar a variables y demás), printnl añade un salto de línea */
-        System.out.println("Hola Mundo"); // Código para él Hola Mundo
+        System.out.println("Hola Mundo"); // Código para el programa Hola Mundo
     }
 }
