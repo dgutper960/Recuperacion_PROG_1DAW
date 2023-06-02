@@ -1,9 +1,14 @@
 ## En la Actividad 3.2 (clase persona)
 
 --> Como funciona el this y a que se refiere
+--> El resultado del metodo es null
  
 --> ¿What's this?
 
    Persona () {
         nombre = "Anónimo";
     }
+
+## Actividad 3.3
+
+--> Requerimiento de Composición
