@@ -1,4 +1,4 @@
-package Tema_3.Actividad_3_3;
+package Tema_3.Actividad_3_1;
 
 public class UsoPrivado extends Coche{
     String combustible;

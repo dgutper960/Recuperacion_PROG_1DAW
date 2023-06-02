@@ -1,4 +1,4 @@
-package Tema_3.Actividad_3_1;
+package Tema_3.Ejercicio_3_1_Composicion_Herencia;
 
 public class Main {
     final static Integer A=234;

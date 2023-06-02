@@ -1,4 +1,4 @@
-package Tema_3.Actividad_3_1;
+package Tema_3.Ejercicio_3_1_Composicion_Herencia;
 /** Vamos a programar una calculadora que realice las 4 operaciones más básicas: suma, resta, multiplicación y división.
  Cada operación será un método distinto.
  -> Crea una clase llamada Main con un método main y dos campos que sean dos constantes para los operandos:

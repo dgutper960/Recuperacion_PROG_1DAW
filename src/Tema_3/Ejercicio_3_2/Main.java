@@ -1,4 +1,4 @@
-package Tema_3.Actividad_3_2;
+package Tema_3.Ejercicio_3_2;
 /** Creamos una Clase Main para instanciar tantas nuevas personas de la Clase Persona como sea necesario*/
 
 public class Main {
@@ -30,6 +30,8 @@ public class Main {
         persona4.setEdad(15);
         System.out.println("De esta persona solo sabemos que tiene "+persona4.getEdad()+" años");
         System.out.println("Nos preguntamos si será el músico legendario "+persona4.esMusico);
+
+        persona1.mostrarNombreCompleto();
 
     }
 }

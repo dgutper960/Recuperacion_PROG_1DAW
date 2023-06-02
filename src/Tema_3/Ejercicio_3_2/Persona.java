@@ -1,6 +1,9 @@
-package Tema_3.Actividad_3_2;
+package Tema_3.Ejercicio_3_2;
 /** Creamos esta Clase llamada Persona, que será de visibilidad Pública
- * le vamos a dar una serie de atributos: nombre, primApellido, segApellido y edad */
+ * le vamos a dar una serie de atributos: nombre, primApellido, segApellido y edad
+ * -> Añadir los siguientes métodos
+ + mostrarNombreCompleto
+ + mostrarIniciales   */
 
 public class Persona {
     public String esMusico; /** para poder acceder al método desde la clase Main */
@@ -54,6 +57,13 @@ public class Persona {
 
     public void setEdad(int edad) {
         this.edad = edad;
+    }
+
+    public void mostrarNombreCompleto(){
+        this.nombre = nombre;
+        this.primApellido = primApellido;
+        this.segApellido = segApellido;
+        System.out.println("El nombre completo es "+nombre+" "+primApellido+" "+segApellido);
     }
 
     public void esMusico(){
