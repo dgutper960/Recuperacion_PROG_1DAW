@@ -17,6 +17,8 @@ public class Alumnos extends Persona {
     private String apellidos;
     private Integer edad;
     private Boolean repetidor;
+
+    private String email;
     private Float notaMedia;
 
     /** se espera que de un alumno se pueda obtener una impresión de su nombre con
@@ -74,6 +76,14 @@ public class Alumnos extends Persona {
 
     public Float getNotaMedia() {
         return notaMedia;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
     }
 
     public void setNotaMedia(Float notaMedia) {
