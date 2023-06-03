@@ -11,7 +11,7 @@ import Tema_3.practica_3.persona.Persona;
  modificación, pero no de forma directa, sino encapsulando esta información. Por último,
  añade un constructor sin parámetros y otro con los parámetros del nombre, apellidos y
  edad. **/
-public class Alumnos extends Persona {
+public class Alumno extends Persona {
     // Declaramos campos requeridos con visibilidad privada (nivel clase)
     private String nombre;
     private String apellidos;
@@ -32,12 +32,12 @@ public class Alumnos extends Persona {
                 "Edad: "+getEdad());
     }
 
-    Alumnos() {
+    Alumno() {
     } // Constructor sin parámetro
 
     /** Ejercicio 3: Añade una restricción a la clase anterior para que no puedan crearse alumnos
      nuevos sin darles un nombre, apellidos y edad. */
-    Alumnos(String nombre, String apellidos, Integer edad) {
+    Alumno(String nombre, String apellidos, Integer edad) {
         this.nombre = nombre;
         this.apellidos = apellidos;
         this.edad = edad;

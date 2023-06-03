@@ -21,26 +21,26 @@ public class Main {
         direccion1.setLocalidad("Sevilla");
         direccion1.setProvincia("Sevilla");
 
-        Alumnos alumno1 = new Alumnos();
+        Alumno alumno1 = new Alumno();
         alumno1.setNombre("Davilillo");
         alumno1.setApellidos("Trumpet Milles");
         alumno1.setEdad(38);
         alumno1.setRepetidor(false);
         alumno1.setNotaMedia(7.9F);
         alumno1.setEmail("trumpetmiles@hopemail.es");
-        alumno1.setDireccion(); /** Llegado este punto hay que
-         crear un método en la Clase Direccion para obtener la dirección completa*/
+        alumno1.setDireccion(alumno1.getDireccion());
 
 
-        Alumnos alumno2 = new Alumnos();
+        Alumno alumno2 = new Alumno();
         alumno2.setNombre("Juana Mari");
         alumno2.setApellidos("Nuñez Fernandez");
         alumno2.setEdad(27);
         alumno2.setRepetidor(false);
-        alumno2.setNotaMedia(8.8f);
+        alumno2.setNotaMedia(8.8F);
         alumno2.setEmail("lamarijuana@hotmail.com");
-        alumno2.setDireccion(); /** Como antes, debemos llamar al método direccionCompleta()*/
+        alumno2.setDireccion(alumno2.getDireccion());
+
+        //TODO ES NECESARIO ACLARAR EL EJERCICIO 6 CON EL PROFESOR
     }
 
-    }
 }

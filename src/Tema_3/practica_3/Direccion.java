@@ -39,8 +39,41 @@ public class Direccion {
         this.localidad = localidad;
     }
 
+    /** Ejercicio 6: Define un método para imprimir la dirección completa. Sobrecarga el método
+     anterior para imprimir sólo la calle y la localidad. Sobrecarga varios constructores para
+     poder crear direcciones sin provincia ni código postal. Sobreescribe el constructor por
+     defecto para que siga habiendo un constructor sin parámetros. */
+
+    public void direccionCompleta(){
+        System.out.println("Dirección Completa\n" +
+                "Calle: "+getCalle()+"\n" +
+                "Número: "+getNumero()+"\n" +
+                "Piso: "+getpiso+"\n" +
+                "Letra: "+getLetra()+"\n" +
+                "Cod Postal: "+getCodPos()+"\n" +
+                "Localidad: "+getLocalidad()+"\n" +
+                "Provincia: "+getProvincia());
+    }
+
+    public void direccionCompleta(String calle, String localidad){
+        System.out.println("Calle: "+getCalle()+"\nLocalidad: "+getLocalidad());
+    }
+    
+    public void direccionCompleta(){
+        System.out.println("Dirección Completa\n" +
+                "Calle: "+getCalle()+"\n" +
+                "Número: "+getNumero()+"\n" +
+                "Piso: "+getpiso+"\n" +
+                "Letra: "+getLetra()+"\n" +
+                "Localidad: "+getLocalidad());
+    }
+    
+    public void direccionCompleta(){}
+
 
     // Creamos los getters y setters
+
+
 
     public String getCalle() {
         return calle;
