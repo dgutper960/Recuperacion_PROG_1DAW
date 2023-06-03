@@ -28,7 +28,7 @@ public class Main {
         alumno1.setRepetidor(false);
         alumno1.setNotaMedia(7.9F);
         alumno1.setEmail("trumpetmiles@hopemail.es");
-        alumno1.setDireccion(alumno1.getDireccion());
+        alumno1.setDireccion(direccion2);
 
 
         Alumno alumno2 = new Alumno();
@@ -38,7 +38,7 @@ public class Main {
         alumno2.setRepetidor(false);
         alumno2.setNotaMedia(8.8F);
         alumno2.setEmail("lamarijuana@hotmail.com");
-        alumno2.setDireccion(alumno2.getDireccion());
+        alumno2.setDireccion(direccion1);
 
         //TODO ES NECESARIO ACLARAR EL EJERCICIO 6 CON EL PROFESOR
     }
