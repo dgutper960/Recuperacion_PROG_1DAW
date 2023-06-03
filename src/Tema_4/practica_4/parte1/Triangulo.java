@@ -1,4 +1,4 @@
-package Tema_4.practica_4;
+package Tema_4.practica_4.parte1;
 /** Esta clase hereda de Geometria e implementa de Coloreable,
  * ello implica que debemos implementar obligatoriamente los métodos que estén
  * definidos en cada una de esas dos clases (Geometría y Coloreable) */
