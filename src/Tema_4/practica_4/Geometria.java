@@ -8,7 +8,7 @@ abstract class Geometria {  // Valor de privacidad sin especificar
     double area;
 
     double perimetro;
-
+/** Como esta clase es Abstracta los métodos iran sin cuerpo y los campos sin inicializar */
     abstract double calcularArea();
 
     abstract double calcularPerimetro();

@@ -5,19 +5,30 @@ package Tema_4.practica_4;
 public class Cuadrado extends Geometria implements Coloreable {
 
     private double lado;
+    // Añadimos variable para el color
+    String color;
+
+    /** Constructor para inicializar un objeto de cuadrado */
+    public Cuadrado(double lado){
+        this.lado = lado; // this para usar la variable lado de la Clase Cuadrado
+    }
 
     @Override
     public void colorear(String color) {
 
     }
 
+    /** Para calcular el área de un cuadrado lado * lado --*/
     @Override
     double calcularArea() {
-        return 0;
+        area = lado * lado;
+        return area;
     }
 
+    /** Para obtener el perímetro del cuadrado lado + lado + lado + lado ---*/
     @Override
     double calcularPerimetro() {
-        return 0;
+        perimetro = lado * 4;
+        return perimetro;
     }
 }

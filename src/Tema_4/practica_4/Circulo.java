@@ -5,20 +5,32 @@ package Tema_4.practica_4;
 
 public class Circulo extends Geometria implements Coloreable{
 
-    private double radio;
+    // Se declara la variable del UML
+    private double radio; // Cuando hemos inicializado Circulo, se ha tomado esta variable
+    // Se declara una variable para el color
+    String color;
+
+    /** Constructor para inicializar un objeto de la clase Círculo */
+    public  Circulo(double radio){
+        this.radio = radio;  /** Para referirnos a la variable de la clase y no a la local */
+    }
+
 
     @Override
     public void colorear(String color) {
 
     }
-
+    /** Para calcular el area de un circulo -> (A = π r²) */
     @Override
     double calcularArea() {
-        return 0;
+        area = Math.PI * (radio * radio);
+        return area;
     }
 
+    /** Para calcular el perímetro de un círculo -> P = π x d */
     @Override
     double calcularPerimetro() {
-        return 0;
+        perimetro = Math.PI * (radio * 2); // el diámetro es el radio x2
+        return perimetro;
     }
 }

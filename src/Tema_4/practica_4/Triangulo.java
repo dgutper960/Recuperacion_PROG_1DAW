@@ -5,20 +5,30 @@ package Tema_4.practica_4;
 public class Triangulo extends Geometria implements Coloreable {
     private double base;
     private double altura;
-    private double[] lados = new double[3];;
+    private double lados = 3;
+
+    /** Inicializamos el objeto Triangulo, no nos olvidamos de los parámetros de entrada ;) ..bueno, un poco sí... xD **/
+    public Triangulo(double base, double altura, double lados){
+        this.base = base;
+        this.altura = altura;
+        this.lados = lados;
+    }
 
     @Override
     public void colorear(String color) {
 
     }
 
+    /** Calcular el perímetro de un triángulo es -> base * altura entre 2 **/
     @Override
     double calcularArea() {
-        return 0;
+        area = (base * altura) / 2;
+        return area;
     }
-
+    /** Perímetro = suma de los 3 lados  */
     @Override
     double calcularPerimetro() {
-        return 0;
+        perimetro = lados + base;
+        return perimetro;
     }
 }
