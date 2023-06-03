@@ -17,9 +17,11 @@ public class Alumnos extends Persona {
     private String apellidos;
     private Integer edad;
     private Boolean repetidor;
-
-    private String email;
     private Float notaMedia;
+    private String email;
+
+    private String direccion;
+
 
     /** se espera que de un alumno se pueda obtener una impresión de su nombre con
      los apellidos y la edad */
@@ -84,6 +86,14 @@ public class Alumnos extends Persona {
 
     public void setEmail(String email) {
         this.email = email;
+    }
+
+    public String getDireccion() {
+        return direccion;
+    }
+
+    public void setDireccion(String direccion) {
+        this.direccion = direccion;
     }
 
     public void setNotaMedia(Float notaMedia) {
