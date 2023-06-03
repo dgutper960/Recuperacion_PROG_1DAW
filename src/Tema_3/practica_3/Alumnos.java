@@ -35,11 +35,13 @@ public class Alumnos extends Persona {
     Alumnos() {
     } // Constructor sin parámetro
 
+    /** Ejercicio 3: Añade una restricción a la clase anterior para que no puedan crearse alumnos
+     nuevos sin darles un nombre, apellidos y edad. */
     Alumnos(String nombre, String apellidos, Integer edad) {
         this.nombre = nombre;
         this.apellidos = apellidos;
         this.edad = edad;
-    } // Constructor con parámetros
+    } // Constructor con parámetros: Estos campos serán obligatorios en la creación de nuevos alumnos
 
 
 
