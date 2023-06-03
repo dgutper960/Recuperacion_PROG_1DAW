@@ -15,7 +15,7 @@ public class Persona {
         this.primApellido = primApellido;
         this.segApellido = segApellido;
         this.edad = edad;
-    } // Constructor sin parámetros, inicializa las variables con los valores pasados como parámetros (this)
+    } // Constructor con parámetros, inicializa las variables con los valores pasados como parámetros (this)
 
     // Creamos los métodos públicos getters y setters
 
