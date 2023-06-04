@@ -9,7 +9,7 @@ package Tema_4.practica_4.parte4;
 public class Main {
     public static void main(String[] args) {
         /** Se crea e String DNI y se inicializa*/
-        String dni = "78435634D";
+        String dni = "27896356J";
 
         /** Condicional que llama al método validarDNI() implementada más abajo*/
         if (validarDNI(dni)) { // Si la función devuelve true se imprime que es válido
