@@ -1,55 +1,48 @@
 package Tema_4.practica_4.parte4;
 
-/** Ejercicio 4
+/** Implementa un programa que reciba un DNI y responda si se trata de un DNI válido.
+ * El cálculo de la letra correspondiente a los dígitos se realiza mediante el algoritmo descrito en
+ * https://www.interior.gob.es/opencms/ca/servicios-al-ciudadano/tramites-y-gestiones/dni/calculo-del-digito-de-control-del-nif-nie/
 
- Implementa un programa que reciba un DNI y responda si se trata de un DNI válido.
- El cálculo de la letra correspondiente a los dígitos se realiza mediante el algoritmo descrito en
- https://www.interior.gob.es/opencms/ca/servicios-al-ciudadano/tramites-y-gestiones/dni/calculo-del-digito-de-control-del-nif-nie/
-
- Utiliza expresiones regulares. */
+    Utiliza expresiones regulares.  */
 
 public class Main {
     public static void main(String[] args) {
-        String dni = "27896536F"; /** Creamos una variable de tipo String que contendrá el DNI  */
-        validarDNI(dni); // Llamada al método validarDNI()
-    } // Esta llave cierra el main
+        /** Se crea e String DNI y se inicializa*/
+        String dni = "78435634D";
 
-    /** Este método va a validar el DNI mediante un if que en su condición va a llamar a otros métodos
-     * los cuales se definen más abajo **/
-    private static void validarDNI(String dni) {
-        if (dni.length() == 9 && Character.isLetter(dni.charAt(8)) == true && formatoCorrecto(dni) == true && letraCorrecta(dni) == true) {
-            System.out.println("El DNI es válido"); /** Si se cumplen todas las condiciones de arriba, el DNI será válido */
+        /** Condicional que llama al método validarDNI() implementada más abajo*/
+        if (validarDNI(dni)) { // Si la función devuelve true se imprime que es válido
+            System.out.println("El DNI es válido.");
+        } else { // Si no se imprime que noi es válido
+            System.out.println("El DNI no es válido.");
         }
-        else System.out.println("El DNI no es válido"); /** Si no, será inválido */
     }
 
-    /** Se Comprobará que los 8 primeros caracteres del DNI no sean letras*/
-    private static boolean formatoCorrecto(String dni) { /** Método privado con retorno booleano */
-        /** Se recorre el String comprobando que los 8 primeros valores no son letras mediante Character.isLetter() */
-        for (int i = 0; i < dni.length() - 1; i++) {
-            if (Character.isLetter(dni.charAt(i))){
-                return false; /** Si encuentra un letra devuelve false */
-            }
+    /** Método que devuelve booleano */
+    public static boolean validarDNI(String dni) {
+        /** Se inicializa un variable con el patron correspondiente:
+         * (cadena que contiene 8 dígitos seguidos de una letra).
+         * Si el DNI no coincide con el patrón, la función devuelve false */
+        String patron = "\\d{8}[A-HJ-NP-TV-Za-hj-np-tv-z]";
+        if (!dni.matches(patron)) {
+            return false;
         }
-        return true; /** Si no hay letras se devuelve true **/
+        int numero = Integer.parseInt(dni.substring(0, 8));
+        /** Se extrae el número de la cadena con sunstring(0, 8) que previamente se ha pasado a int con parseInt()
+         * y se almacena en la variable 'número'*/
+        char letraCalculada = calcularLetraDNI(numero);
+        /** Se introduce la variable de antes como parámetro de entrada de la función calcularLetraDNI() definido abajo */
+        char letraDNI = dni.charAt(8);
+        /** La función dni.charAt(8) extrae la letra de dni sabiendo que está en la posición 8 (el 0 es inclusivo)*/
+        return letraCalculada == letraDNI; /** Finalmente, se comparan los valores de las variables como return **/
     }
-
-    /** Para este método necesitamos saber que para hallar la letra en un DNI válido,
-     * se divide el número entre 23 y el resto se sustituye por una letra que se determina mediante una tabla en la web*/
-    private static boolean letraCorrecta(String dni){ // Ponemos el DNI como parámetro de entrada
-        /** Para obtener la parte numérica del DNI, vamos a extraer los primeros 8 caracteres del String con el método substring()
-         * pero previamente necesitamos convertir el String a Int con el método Integer.parseInt() */
-        int soloIntDNI = Integer.parseInt(dni.substring(0,8));
-        /** Creamos un array tipo Character que contenga por orden todas las letras que se definen en la tabla de la web */
-        Character[] letrasValidas = {'T', 'R', 'W', 'A', 'G', 'M', 'Y', 'F', 'P', 'D', 'X', 'B', 'N', 'J', 'Z', 'S', 'Q', 'V', 'H', 'L', 'C', 'K', 'E'};
-        /** Inicializamos una variable con el valor del resto de soloIntDNI entre 23  */
-        int resto = soloIntDNI % 23;
-        /** La variable "letraCorrecta" de tipo Character que será igual a la letra en la posición del array del resto */
-        Character letraCorrecta = letrasValidas[resto];
-        /** If compara la letra en la última posición del DNI introducido es la misma que la de la variable "letraCorrecta" */
-        if(dni.charAt(8) == letraCorrecta) {
-            return true; /** Si la condición se cumple se retorna true*/
-        }
-        else return false; /** Si la condición no se cumple, se retorna false */
-    }
+    /** Este es el método para calcular la letra del DNI, ya que toma como parámetro el número solo y lo divide entre 23
+     * para comprobar si el resto coincide con lo estipulado en la página web */
+    public static char calcularLetraDNI(int numero) {
+        String caracteres = "TRWAGMYFPDXBNJZSQVHLCKE"; // Las letras están en el orden proporcionado en la tabla de la web
+        int indice = numero % 23;
+        return caracteres.charAt(indice);
+    } /** Se utiliza el método charAt() de la cadena caracteres para obtener el carácter en la posición índice.
+     De esta manera, la función calcularLetraDNI devuelve la letra correspondiente al DNI basándose en el número proporcionado. */
 }
