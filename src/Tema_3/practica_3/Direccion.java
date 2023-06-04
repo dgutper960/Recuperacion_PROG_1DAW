@@ -48,7 +48,7 @@ public class Direccion {
         System.out.println("Dirección Completa\n" +
                 "Calle: "+getCalle()+"\n" +
                 "Número: "+getNumero()+"\n" +
-                "Piso: "+getpiso+"\n" +
+                "Piso: "+getPiso()+"\n" +
                 "Letra: "+getLetra()+"\n" +
                 "Cod Postal: "+getCodPos()+"\n" +
                 "Localidad: "+getLocalidad()+"\n" +
@@ -63,7 +63,7 @@ public class Direccion {
         System.out.println("Dirección Completa\n" +
                 "Calle: "+getCalle()+"\n" +
                 "Número: "+getNumero()+"\n" +
-                "Piso: "+getpiso+"\n" +
+                "Piso: "+getPiso()+"\n" +
                 "Letra: "+getLetra()+"\n" +
                 "Localidad: "+getLocalidad());
     }

@@ -20,7 +20,7 @@ public class Alumno extends Persona {
     private Float notaMedia;
     private String email;
 
-    private String direccion;
+    private Direccion direccion;
 
 
     /** se espera que de un alumno se pueda obtener una impresión de su nombre con
@@ -90,7 +90,7 @@ public class Alumno extends Persona {
         this.email = email;
     }
 
-    public String getDireccion() {
+    public Direccion getDireccion() {
         return direccion;
     }
 
