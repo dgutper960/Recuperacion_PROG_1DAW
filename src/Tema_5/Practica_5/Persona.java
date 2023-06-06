@@ -40,12 +40,13 @@ private int edad;
     /** Generamos los constructores, uno para nombre */
     public Persona(String nombre) {
         this.nombre = nombre;
-    }
+    } /** Este será el que usemos en nuestra cola */
+
     /** y otro para nombre y edad */
     public Persona(String nombre, int edad) {
         this.nombre = nombre;
         this.edad = edad;
-    }
+    } /** Este se ha hecho para repasar, y comprobarlo en el constructor del Main, pero no es necesario */
 
     /** Generamos también un método toString()
      * para representar la instancia de la clase como una cadena

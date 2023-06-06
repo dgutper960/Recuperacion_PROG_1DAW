@@ -56,7 +56,39 @@ public class Main {
         System.out.print("La longitud de la cola (en Personas) es de : ");
         colaCine.longitud();
 
+        //TODO; A PARTIR DE ESTE PUNTO SE RESPONDE AL ENUNCIADO --> PILA
 
+        /** Instanciamos el objeto de la Clase Pila (lo que es crear la nueva pila) */
+        Pila pilaPersonas = new Pila();
 
+        /** Añadimos personas a la pila */
+        System.out.println("Añadiendo personas a la pila: ");
+        pilaPersonas.apilar(francisca);
+        pilaPersonas.apilar(manuela);
+        pilaPersonas.apilar(ramona);
+        pilaPersonas.apilar(juana);
+        pilaPersonas.apilar(isabella);
+        System.out.println(pilaPersonas);
+
+        /** Quitamos el elemento superior de la Pila */
+        System.out.print("Quitando el elemento superior (el último en entrar) ");
+        pilaPersonas.desapilar();
+        System.out.println(pilaPersonas);
+
+        /** Vemos cuál es el elemento que se encuentra el último en la pila */
+        pilaPersonas.cima();
+
+        /** Limpiamos la pila */
+        System.out.print("Llegaron otra vez los antidistrubios!! ");
+        pilaPersonas.limpiar();
+        System.out.println(pilaPersonas);
+
+        /** Comprobamos si está vacía */
+        System.out.print("Comprobación de disidentes en la zona: ");
+        System.out.println(pilaPersonas.esVacia());
+
+        /** Para saber la longitud de la pila (en número de personas) */
+        pilaPersonas.longitud();
     }
 }
+

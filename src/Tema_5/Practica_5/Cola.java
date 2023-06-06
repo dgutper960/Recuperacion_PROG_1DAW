@@ -65,6 +65,11 @@ public class Cola {
     }/** Mismo método que el usado en el for**/
 
 
+    /** Permite la representación del objeto mediante una cadena */
+    @Override
+    public String toString() {
+        return cola.toString();
+    }
 
 }
 
