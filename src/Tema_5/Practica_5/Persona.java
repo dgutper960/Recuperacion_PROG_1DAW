@@ -56,7 +56,7 @@ private int edad;
         return "Persona{" +
                 "nombre='" + nombre + '\'' +
                 '}';
-    }
+    }/** Para representar el objeto Persona como una cadena **/
 
 
     /** Esta es la sobrecarga del método compareTo
