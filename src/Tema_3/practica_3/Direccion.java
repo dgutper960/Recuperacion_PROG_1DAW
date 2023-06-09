@@ -44,7 +44,7 @@ public class Direccion {
      poder crear direcciones sin provincia ni código postal. Sobreescribe el constructor por
      defecto para que siga habiendo un constructor sin parámetros. */
 
-    public void direccionCompleta(){
+    public void imprimirDireccion(){
         System.out.println("Dirección Completa\n" +
                 "Calle: "+getCalle()+"\n" +
                 "Número: "+getNumero()+"\n" +
@@ -58,17 +58,7 @@ public class Direccion {
     public void direccionCompleta(String calle, String localidad){
         System.out.println("Calle: "+getCalle()+"\nLocalidad: "+getLocalidad());
     }
-    
-    public void direccionCompleta(){
-        System.out.println("Dirección Completa\n" +
-                "Calle: "+getCalle()+"\n" +
-                "Número: "+getNumero()+"\n" +
-                "Piso: "+getPiso()+"\n" +
-                "Letra: "+getLetra()+"\n" +
-                "Localidad: "+getLocalidad());
-    }
-    
-    public void direccionCompleta(){}
+
 
 
     // Creamos los getters y setters
