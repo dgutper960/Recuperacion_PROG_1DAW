@@ -17,9 +17,9 @@ public class Main {
             controlStock(1, 3, 100);
         } catch (ExcepcionDavilillo exDav){
             /* La ExcepcionDavilillo muestra el mensaje personalizado */
-            System.out.println(" Se ha producido una exexpion personalizada: "+ exDav.getMessage());
+            System.out.println(" Se ha producido una excepcion personalizada: "+ exDav.getMessage());
         } catch (Exception x){
-            System.out.println("Se ha producido una execpcion "+ x.getMessage());
+            System.out.println("Se ha producido una excepcion generica "+ x.getMessage());
         }
     }
 
@@ -34,3 +34,5 @@ public class Main {
     }
 }
 
+/** Si quisiera tener una excepcion para stockMin y otra para stockMax, debería crear una clase Excepcion para
+ * cada una de ellas y luego procede a la llamada en cade una de las situaciones tanto en el método como en el catch  */
