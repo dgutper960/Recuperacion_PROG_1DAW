@@ -1,23 +1,23 @@
-A6.1. Excepciones
+# A6.1. Excepciones
 
 
-1. ¿Cuál es el nombre en Java de la clase que define las excepciones, y de la que debe heredar cualquier clase que queramos usar para representar una excepción?
+## 1. ¿Cuál es el nombre en Java de la clase que define las excepciones, y de la que debe heredar cualquier clase que queramos usar para representar una excepción?
 
     - Excepcion
 
 
-2. ¿Cuál es el nombre en Java de la clase que representa las excepciones que se producen al invocar un método de un objeto cuyo valor es “null”?
+## 2. ¿Cuál es el nombre en Java de la clase que representa las excepciones que se producen al invocar un método de un objeto cuyo valor es “null”?
 
     - NullPointerException
 
 
 
-3. ¿Cuál es el nombre en Java de la clase que representa las excepciones que se producen al obtener un comportamiento anómalo en la entrada / salida de información?
+## 3. ¿Cuál es el nombre en Java de la clase que representa las excepciones que se producen al obtener un comportamiento anómalo en la entrada / salida de información?
 
     - IOException
 
 
-4. Observa el siguiente fragmento de código:
+## 4. Observa el siguiente fragmento de código:
 
 String [] array_string = new String [25];
 System.out.println (array_string [3].length());
@@ -27,7 +27,7 @@ System.out.println (array_string [3].length());
     - Producirá la excepción NullPointerException. Ya que el índice 3 va a tener un valor null.
 
 
-5. Observa el siguiente fragmento de código:
+## 5. Observa el siguiente fragmento de código:
 
 String aux = “hola”;
 int aux2 = Integer.parseInt (aux);
