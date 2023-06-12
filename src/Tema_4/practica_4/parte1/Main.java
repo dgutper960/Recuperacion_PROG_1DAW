@@ -23,14 +23,17 @@ public class Main {
        Geometria[] poligonos = {cir1, cir2, cuad1, cuad2, tri1, tri2};
 
        /** Accedemos al método que calcula todas las áreas */
-        System.out.println("El área total de los polígonos corresponde a ");
+        System.out.println("El área total de los polígonos corresponde a "+calcularArea(poligonos));
+
+        /** Accedemos al método que calcula el perímetro de todos los polígonos */
+        System.out.println("El perímetro total de todos los polígonos es "+calcularPerimetro(poligonos));
     }
 
     /** Creamos el código para el método calcularArea() */
     static double calcularArea(Geometria[] areaPoligonos) {
 
         double areaTotal = 0; /** Si no se inicializa la variable, el compilador Java producirá un error, es así en Java */
-        // Estas variables booleanas son para poner a false con la primera figura
+        // Estas variables booleanas son para poner a true con la primera figura
         boolean primerCirculo = true, primerCuadrado = true, primerTriangulo = true;
         /** Iniciamos bucle for con i a 0 y mientras sea menor que la longitud del array, el incremento es 1*/
         for (int i = 0; i < areaPoligonos.length; i++) {

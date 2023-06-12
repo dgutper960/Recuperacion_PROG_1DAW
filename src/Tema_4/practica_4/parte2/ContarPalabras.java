@@ -13,24 +13,24 @@ public class ContarPalabras {
         System.out.println("En este texto hay : " + contarPalabrasDif(texto1)+" palabras diferentes");
     }
 
-    /** Tomamos como parametro de entrada el texto1 */
+    /** Tomamos como parámetro de entrada el texto1 */
     private static int contarPalabrasDif(String texto1) {
-    /** Primero vamos a eliminar las mayusculas del texto con toLowerCase() */
+    /* Primero vamos a eliminar las mayúsculas del texto con toLowerCase() */
         texto1 = texto1.toLowerCase();
-        /** Con split() dividimos las palabras al detectar los espacios
+        /* Con split() dividimos las palabras al detectar los espacios
          * y las vamos almacenando en el array textoEntero de tipo String */
         String[] textoEntero = texto1.split(" ");
-        /** Se crea otro array String con la misma longitud que el anterior llamado palabrasDif*/
+        /* Se crea otro array String con la misma longitud que el anterior llamado palabrasDif*/
         String[] palabrasDif = new String[textoEntero.length]; // Este array esta vacío, solo tenemos la longitud
 
-        int contDistintas = 0; /** Será nuestro return; sumaremos 1 cuando se hallen palabras distintas */
-        /** Bucle foreach para recorrer todas las palabras */
+        int contDistintas = 0; /* Será nuestro return; sumaremos 1 cuando se hallen palabras distintas */
+        /* Bucle foreach para recorrer todas las palabras */
         for (String palabra : textoEntero) {
             if (!arrayContieneCadena(palabrasDif, contDistintas, palabra)) {
                 palabrasDif[contDistintas] = palabra;
                 contDistintas++;
             }
-            /** se usa el metodo arrayContieneCadena() cada vez que encuentra una cadena repetida
+            /* Se usa el método arrayContieneCadena() cada vez que encuentra una cadena repetida
              * se suma 1 al contador. Se utiliza '!' para negar el resultado de la expresión booleana.
              * Se está negando el valor devuelto por el método arrayContieneCadena,
              * que devuelve true si la cadena ya existe en el array y false si no existe.*/
