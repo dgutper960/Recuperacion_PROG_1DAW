@@ -16,6 +16,8 @@ public class Main {
         int numDiscos = 3;
         moverDiscos(3,0,2);
 
+        hanoi(3, 'A', 'C', 'B');
+
     }
 
    /* Método para resolver el problema 'Torre de Hanoi'
@@ -51,4 +53,19 @@ public class Main {
 //      Por lo tanto la complejidad de esta algoritmo en notación Big O es de O(2^n)
 
    }
+
+   /* Creamos un método para resolver la torre de Hanoi
+   * necesitamos argumentos para el num de discos, origen, destino y auxiliar*/
+    public static void hanoi(int n, char origen, char destino, char auxiliar) {
+        if (n == 0) {  // Si num de discos es cero salimos del programa
+            System.out.println("Mover disco " + n + " desde " + origen + " a " + destino);
+            return;
+        }
+
+        hanoi(n - 1, origen, auxiliar, destino);
+        System.out.println("Mover disco " + n + " desde " + origen + " a " + destino);
+        hanoi(n - 1, auxiliar, destino, origen);
+    }
+
+
 }
