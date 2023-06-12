@@ -10,7 +10,7 @@ public class Main {
          * Realiza un algoritmo que dado un conjunto de números, encuentre el número más grande.
          * */
         // Creamos un array de números
-        int[] numeros = {49,91,3,27,89,11};
+        int[] numeros = {49,15,3,27,89,91,11};
 
         // Creamos un conjunto de números del tipo HashSet
         Set<Integer> numConjunto = new HashSet<>();
@@ -70,7 +70,7 @@ public class Main {
 
      En este caso vamos a necesitar la misma cantidad de iteraciones en cualquier caso, ya que siempre vamos a
      tener que recorrer el conjunto en su totalidad.
-     Caso distinto sería que buscásemos un número dado en el conjunto, en ese caso si podríamos hablar de en el mejor
-     y peor de los casos, ya que, el número podría aparecer en cualquier momento y el programa terminar en ese momento */
+     Caso distinto sería que buscásemos un número dado en el conjunto, en ese caso, si podríamos hablar de mejor
+     y peor de los casos, dado que, el número podría aparecer en cualquier momento y el programa terminar en ese momento */
 
 }
