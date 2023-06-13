@@ -22,4 +22,4 @@ Sin haber realizado el código, en teoría, la resolución iterativa,
 debería ser de menor orden de complejidad, ya que de base, en el
 caso recursivo ya partimos de una situación mala de por sí. Además de que 
 la recursividad suele ser más costosa que la iteración a nivel de recursos, a la vez que más compleja a nivel de lógica de programación. 
-De todas formas la única manera de averiguarlo es sacar el código y hacer el cálculo.
+De todas formas, la única manera de averiguarlo es sacar el código y hacer el cálculo.
