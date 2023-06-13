@@ -6,6 +6,7 @@ import java.util.Arrays;
 
 public class TestMochilaFraccionaria {
     public static void main(String[] args) {
+        /** Se crean los objetos necesarios y se asignan los valores*/
         Double max = 100.0;
         int n = 5;
         Double[] pesos = {10.0, 20.0, 30.0, 40.0, 50.0};
