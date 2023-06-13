@@ -8,7 +8,7 @@ public class Main {
         int[] a={1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30};
 
         // Vamos a buscar el elemento diana
-        int diana = 1;
+        int diana = 27;
 
         // Llamamos al método he inicializamos una variable int con su valor
         int SantoGrial= DyV(a,diana);
