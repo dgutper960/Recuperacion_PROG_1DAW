@@ -14,15 +14,15 @@ public class Main {
          * que herede de Excepcion */
 
         /* Vamos a llamar al método busRecursiva() dentro del bloque try */
-        busRecursiva(aOrdenado, 2, 0, aOrdenado.length -1);
+        busRecursiva(aOrdenado, 2, 0, aOrdenado.length - 1);
 
     }
 
     /* Creamos el método (estático) recursivo para buscar el número */
-    static int busRecursiva(int[] array, int numBuscado, int inicio, int fin) throws ElementNotFoundException{
+    static int busRecursiva(int[] array, int numBuscado, int inicio, int fin) throws ElementNotFoundException {
         /* Creamos el caso base */
-        if(inicio > fin){ // En este caso no se habrá encontrado el número
-           //return -1; Donde va el return ponemos que se lance la Excepcion Personalizada
+        if (inicio > fin) { // En este caso no se habrá encontrado el número
+            //return -1; Donde va el return ponemos que se lance la Excepcion Personalizada
             try {
                 throw new ElementNotFoundException("Elemento no encontrado");
             } catch (ElementNotFoundException e) {
@@ -30,18 +30,12 @@ public class Main {
             }
         }
         /* Creamos la condición para que el bucle termine */
-        int mitad = (inicio+fin) /2;
-        if (array[mitad] == numBuscado){
+        int mitad = (inicio + fin) / 2;
+        if (array[mitad] == numBuscado) {
             return mitad; /* Entramos en el caso recursivo*/
-        } else if (numBuscado < array[mitad] ) {
-            return busRecursiva(array, numBuscado, inicio, mitad -1 );
-        }else
-            return busRecursiva(array, numBuscado, mitad+1, fin);
-    }
-
-    public static class ElementNotFoundException extends Exception{
-        public ElementNotFoundException(String mensaje){
-            super(mensaje);
-        }
+        } else if (numBuscado < array[mitad]) {
+            return busRecursiva(array, numBuscado, inicio, mitad - 1);
+        } else
+            return busRecursiva(array, numBuscado, mitad + 1, fin);
     }
 }
