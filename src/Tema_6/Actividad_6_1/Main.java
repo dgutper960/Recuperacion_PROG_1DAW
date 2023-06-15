@@ -35,7 +35,7 @@ public class Main {
         if (posicion < 0 || posicion >= palabra.length())
         { /* Llamamos al método de error y Nos muestra por pantalla lo siguiente */
             throw new IllegalArgumentException("ERROR!! Valor de índice incorrecto") ;
-        } /* S no, extraemos el caracter de la posición indicada */
+        } /* Si no, extraemos el caracter de la posición indicada */
         else return palabra.charAt(posicion);
     }
 }

@@ -16,7 +16,7 @@ public class Main {
 
             // Ej- 3
             System.out.println("Ejercicio 3:\nSecuencia de Fibonnaci hasta el núm dado: ");
-            System.out.println(sucesionFibonnaci(77));
+            System.out.println(sucesionFibonnaci(17));
             System.out.println("______________________________________________________");
 
             // Ej- 4

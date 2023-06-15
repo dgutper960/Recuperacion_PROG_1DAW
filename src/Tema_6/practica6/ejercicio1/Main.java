@@ -35,4 +35,4 @@ public class Main {
 }
 
 /** Si quisiera tener una excepcion para stockMin y otra para stockMax, debería crear una clase Excepcion para
- * cada una de ellas y luego procede a la llamada en cade una de las situaciones tanto en el método como en el catch  */
+ * cada una de ellas y luego procede a la llamada en cada una de las situaciones tanto en el método como en el catch  */
