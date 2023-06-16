@@ -14,7 +14,7 @@ public class Persona {
     private String segApellido;
     private int edad;
 
-    Persona () {
+    protected Persona () {
         nombre = "Anónimo";
     }
 

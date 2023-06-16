@@ -18,7 +18,7 @@ package Tema_6.Examen_6.ej_3y4;
      Mientras que si no se encuentra, se mostrará sólamente el mensaje de la excepción.*/
 
 public class Main {
-    public static void main(String[] args) throws ElementNotFoundException {
+    public static void main(String[] args) {
         /* Creamos el Array ordenado */
         int[] aOrdenado = {3, 4, 5, 6, 7, 8, 9};
 
@@ -27,7 +27,15 @@ public class Main {
          * que herede de Excepcion */
 
         /* Vamos a llamar al método busRecursiva() dentro del bloque try */
-        busRecursiva(aOrdenado, 2, 0, aOrdenado.length - 1);
+        try{
+            int resultado = busRecursiva(aOrdenado, 3, 0, aOrdenado.length -1);
+            System.out.println("El numero buscado está en el índice "+resultado);
+        }catch (ElementNotFoundException e){
+            System.out.println(e.getMessage());
+        }
+
+
+
 
     }
 
@@ -36,15 +44,12 @@ public class Main {
         /* Creamos el caso base */
         if (inicio > fin) { // En este caso no se habrá encontrado el número
             //return -1; Donde va el return ponemos que se lance la Excepcion Personalizada
-            try {
-                throw new ElementNotFoundException("Elemento no encontrado");
-            } catch (ElementNotFoundException e) {
-                throw new RuntimeException(e);
-            }
+            throw new ElementNotFoundException("El numero no se ha encontrado");
+
         }
         /* Creamos la condición para que el bucle termine */
         int mitad = (inicio + fin) / 2;
-        if (array[mitad] == numBuscado) {
+        if (array[mitad] == numBuscado) { // Si es así entramos en el retorno y el programa termina
             return mitad; /* Entramos en el caso recursivo*/
         } else if (numBuscado < array[mitad]) {
             return busRecursiva(array, numBuscado, inicio, mitad - 1);

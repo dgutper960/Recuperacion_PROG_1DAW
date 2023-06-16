@@ -8,6 +8,7 @@ public class Main {
         Persona persona1 = new Persona();
         Persona persona2 = new Persona();
 
+
         persona1.setNombre("David");
         persona1.setPrimApellido("Gutiérrez");
         persona1.setSegApellido("Pérez");
