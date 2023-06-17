@@ -1,5 +1,7 @@
 package Tema_7.Actividad_7_4;
 
+/** Creamos una nueva clase persona  */
+
 public class Persona {
     String nombre;
     String telefono;

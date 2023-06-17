@@ -8,32 +8,38 @@ import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 import java.io.File;
 
+/** Esta es la clase main donde vamos definir el código para Importar nuestro xml */
+
 public class ImportarXML {
     public static void main(String[] args) {
+        // Bloque try para el manejo de errores
         try {
+            // Instancia de File, indica la ruta del archivo
             File file = new File("C:/contactosImp.xml");
             DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
             DocumentBuilder dBuilder = dbFactory.newDocumentBuilder();
             Document doc = dBuilder.parse(file);
 
-            // Normaliza el XML
+            // Normalizamos el documento
             doc.getDocumentElement().normalize();
 
-            // Obtiene la lista de nodos de contacto
+            // Con NodeList obtenemos los nodos indicando el nodo raíz
             NodeList nodeList = doc.getElementsByTagName("Contacto");
 
-            // Recorre la lista de contactos
+            /* Recorremos el documento con un for usando el método específico para NodeList,
+            nodeList.getLength() para obtener el tamaño */
             for (int i = 0; i < nodeList.getLength(); i++) {
                 Node node = nodeList.item(i);
                 if (node.getNodeType() == Node.ELEMENT_NODE) {
                     Element elementoContacto = (Element) node;
 
-                    // Obtener los valores de los campos de cada contacto
+                    /* Obtenemos los valores de nombre, direccion y telefono indicando el nombre del respectivo tag
+                    * y guardándolo como valor de su respectiva variable */
                     String nombre = elementoContacto.getElementsByTagName("Nombre").item(0).getTextContent();
                     String direccion = elementoContacto.getElementsByTagName("Direccion").item(0).getTextContent();
                     String telefono = elementoContacto.getElementsByTagName("Telefono").item(0).getTextContent();
 
-                    // Imprimir valores
+                    // Imprimimos los valores (i+1) porque empiezan desde 0
                     System.out.println("Contacto " + (i + 1));
                     System.out.println("Nombre: " + nombre);
                     System.out.println("Dirección: " + direccion);
@@ -41,7 +47,9 @@ public class ImportarXML {
                     System.out.println();
                 }
             }
+            // En caso de error
         } catch (Exception e) {
+            // Se usa este método para imprimir la traza de la excepción en la salida de error estándar
             e.printStackTrace();
         }
     }
