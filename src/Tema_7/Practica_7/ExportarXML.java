@@ -1,7 +1,6 @@
 package Tema_7.Practica_7;
 /** Esta clase será para nuestros datos de entrada
  * debemos importar todas las clases necesarias */
-
 import org.w3c.dom.Document;
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;

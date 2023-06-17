@@ -1,261 +1,833 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
 <daw1>
-                    
+                                                                
     
     
     
-    <alumno intervenciones="0">
-                                        
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <alumno intervenciones="1">
+                                                                                                                                
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
         
         
         
         <nombre>Víctor</nombre>
-                                    
+                                                                                                                            
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     
     
     
     </alumno>
-                    
+                                                                
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     
     
     
     <alumno intervenciones="0">
-                                        
+                                                                                                                                
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
         
         
         
         <nombre>John</nombre>
-                                    
+                                                                                                                            
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     
     
     
     </alumno>
-                    
+                                                                
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     
     
     
     <alumno intervenciones="1">
-                                        
+                                                                                                                                
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
         
         
         
         <nombre>Jorge</nombre>
-                                    
+                                                                                                                            
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     
     
     
     </alumno>
-                    
+                                                                
     
     
     
-    <alumno intervenciones="0">
-                                        
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <alumno intervenciones="1">
+                                                                                                                                
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
         
         
         
         <nombre>Julián</nombre>
-                                    
+                                                                                                                            
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     
     
     
     </alumno>
-                    
+                                                                
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     
     
     
     <alumno intervenciones="1">
-                                        
+                                                                                                                                
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
         
         
         
         <nombre>Diego</nombre>
-                                    
+                                                                                                                            
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     
     
     
     </alumno>
-                    
+                                                                
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     
     
     
     <alumno intervenciones="1">
-                                        
+                                                                                                                                
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
         
         
         
         <nombre>David</nombre>
-                                    
+                                                                                                                            
     
     
     
-    </alumno>
-                    
     
     
     
-    <alumno intervenciones="0">
-                                        
-        
-        
-        
-        <nombre>Juanma Herrera</nombre>
-                                    
+    
+    
+    
+    
+    
     
     
     
     </alumno>
-                    
+                                                                
     
     
     
-    <alumno intervenciones="0">
-                                        
-        
-        
-        
-        <nombre>Jonathan</nombre>
-                                    
     
     
     
-    </alumno>
-                    
     
     
     
-    <alumno intervenciones="0">
-                                        
-        
-        
-        
-        <nombre>Pablo</nombre>
-                                    
     
     
-    
-    </alumno>
-                    
-    
-    
-    
-    <alumno intervenciones="0">
-                                        
-        
-        
-        
-        <nombre>Juan María</nombre>
-                                    
-    
-    
-    
-    </alumno>
-                    
-    
-    
-    
-    <alumno intervenciones="0">
-                                        
-        
-        
-        
-        <nombre>Adrián</nombre>
-                                    
-    
-    
-    
-    </alumno>
-                    
-    
-    
-    
-    <alumno intervenciones="0">
-                                        
-        
-        
-        
-        <nombre>Juan Jesús</nombre>
-                                    
-    
-    
-    
-    </alumno>
-                    
-    
-    
-    
-    <alumno intervenciones="0">
-                                        
-        
-        
-        
-        <nombre>Pepe</nombre>
-                                    
-    
-    
-    
-    </alumno>
-                    
     
     
     
     <alumno intervenciones="1">
-                                        
+                                                                                                                                
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <nombre>Juanma Herrera</nombre>
+                                                                                                                            
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    </alumno>
+                                                                
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <alumno intervenciones="1">
+                                                                                                                                
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <nombre>Jonathan</nombre>
+                                                                                                                            
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    </alumno>
+                                                                
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <alumno intervenciones="1">
+                                                                                                                                
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <nombre>Pablo</nombre>
+                                                                                                                            
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    </alumno>
+                                                                
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <alumno intervenciones="1">
+                                                                                                                                
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <nombre>Juan María</nombre>
+                                                                                                                            
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    </alumno>
+                                                                
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <alumno intervenciones="1">
+                                                                                                                                
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <nombre>Adrián</nombre>
+                                                                                                                            
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    </alumno>
+                                                                
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <alumno intervenciones="1">
+                                                                                                                                
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <nombre>Juan Jesús</nombre>
+                                                                                                                            
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    </alumno>
+                                                                
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <alumno intervenciones="0">
+                                                                                                                                
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <nombre>Pepe</nombre>
+                                                                                                                            
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    </alumno>
+                                                                
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <alumno intervenciones="1">
+                                                                                                                                
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
         
         
         
         <nombre>Dani</nombre>
-                                    
+                                                                                                                            
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     
     
     
     </alumno>
-                    
+                                                                
     
     
     
-    <alumno intervenciones="0">
-                                        
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <alumno intervenciones="1">
+                                                                                                                                
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
         
         
         
         <nombre>Juanma Saborido</nombre>
-                                    
+                                                                                                                            
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     
     
     
     </alumno>
-                    
+                                                                
     
     
     
-    <alumno intervenciones="0">
-                                        
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <alumno intervenciones="1">
+                                                                                                                                
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
         
         
         
         <nombre>Antonio</nombre>
-                                    
+                                                                                                                            
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     
     
     
     </alumno>
-                    
+                                                                
     
     
     
-    <alumno intervenciones="0">
-                                        
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <alumno intervenciones="1">
+                                                                                                                                
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
         
         
         
         <nombre>Jossie</nombre>
-                                    
+                                                                                                                            
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     
     
     
     </alumno>
-                
+                                                            
+
+
+
+
+
+
+
+
+
+
+
 
 
 

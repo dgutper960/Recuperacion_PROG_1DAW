@@ -1,6 +1,5 @@
-<?xml version="1.0" encoding="utf-8" standalone="no"?>
-<daw1>
-                                                                                    
+<?xml version="1.0" encoding="utf-8" standalone="no"?><daw1>
+                                                                
     
     
     
@@ -15,18 +14,8 @@
     
     
     
-    
-    
-    
-    
-    
-    <alumno intervenciones="2">
-                                                                                                                                                                        
-        
-        
-        
-        
-        
+    <alumno intervenciones="0">
+                                                                                                                                
         
         
         
@@ -42,12 +31,7 @@
         
         
         <nombre>Víctor</nombre>
-                                                                                                                                                                    
-    
-    
-    
-    
-    
+                                                                                                                            
     
     
     
@@ -63,7 +47,7 @@
     
     
     </alumno>
-                                                                                    
+                                                                
     
     
     
@@ -78,18 +62,8 @@
     
     
     
-    
-    
-    
-    
-    
-    <alumno intervenciones="1">
-                                                                                                                                                                        
-        
-        
-        
-        
-        
+    <alumno intervenciones="0">
+                                                                                                                                
         
         
         
@@ -105,12 +79,7 @@
         
         
         <nombre>John</nombre>
-                                                                                                                                                                    
-    
-    
-    
-    
-    
+                                                                                                                            
     
     
     
@@ -126,7 +95,7 @@
     
     
     </alumno>
-                                                                                    
+                                                                
     
     
     
@@ -141,18 +110,8 @@
     
     
     
-    
-    
-    
-    
-    
-    <alumno intervenciones="1">
-                                                                                                                                                                        
-        
-        
-        
-        
-        
+    <alumno intervenciones="0">
+                                                                                                                                
         
         
         
@@ -168,12 +127,7 @@
         
         
         <nombre>Jorge</nombre>
-                                                                                                                                                                    
-    
-    
-    
-    
-    
+                                                                                                                            
     
     
     
@@ -189,7 +143,7 @@
     
     
     </alumno>
-                                                                                    
+                                                                
     
     
     
@@ -204,18 +158,8 @@
     
     
     
-    
-    
-    
-    
-    
-    <alumno intervenciones="1">
-                                                                                                                                                                        
-        
-        
-        
-        
-        
+    <alumno intervenciones="0">
+                                                                                                                                
         
         
         
@@ -231,12 +175,7 @@
         
         
         <nombre>Julián</nombre>
-                                                                                                                                                                    
-    
-    
-    
-    
-    
+                                                                                                                            
     
     
     
@@ -252,7 +191,7 @@
     
     
     </alumno>
-                                                                                    
+                                                                
     
     
     
@@ -267,18 +206,8 @@
     
     
     
-    
-    
-    
-    
-    
-    <alumno intervenciones="1">
-                                                                                                                                                                        
-        
-        
-        
-        
-        
+    <alumno intervenciones="0">
+                                                                                                                                
         
         
         
@@ -294,12 +223,7 @@
         
         
         <nombre>Diego</nombre>
-                                                                                                                                                                    
-    
-    
-    
-    
-    
+                                                                                                                            
     
     
     
@@ -315,7 +239,7 @@
     
     
     </alumno>
-                                                                                    
+                                                                
     
     
     
@@ -330,18 +254,8 @@
     
     
     
-    
-    
-    
-    
-    
-    <alumno intervenciones="2">
-                                                                                                                                                                        
-        
-        
-        
-        
-        
+    <alumno intervenciones="0">
+                                                                                                                                
         
         
         
@@ -357,12 +271,7 @@
         
         
         <nombre>David</nombre>
-                                                                                                                                                                    
-    
-    
-    
-    
-    
+                                                                                                                            
     
     
     
@@ -378,7 +287,7 @@
     
     
     </alumno>
-                                                                                    
+                                                                
     
     
     
@@ -393,18 +302,8 @@
     
     
     
-    
-    
-    
-    
-    
-    <alumno intervenciones="2">
-                                                                                                                                                                        
-        
-        
-        
-        
-        
+    <alumno intervenciones="0">
+                                                                                                                                
         
         
         
@@ -420,12 +319,7 @@
         
         
         <nombre>Juanma Herrera</nombre>
-                                                                                                                                                                    
-    
-    
-    
-    
-    
+                                                                                                                            
     
     
     
@@ -441,7 +335,7 @@
     
     
     </alumno>
-                                                                                    
+                                                                
     
     
     
@@ -456,18 +350,8 @@
     
     
     
-    
-    
-    
-    
-    
-    <alumno intervenciones="1">
-                                                                                                                                                                        
-        
-        
-        
-        
-        
+    <alumno intervenciones="0">
+                                                                                                                                
         
         
         
@@ -483,12 +367,7 @@
         
         
         <nombre>Jonathan</nombre>
-                                                                                                                                                                    
-    
-    
-    
-    
-    
+                                                                                                                            
     
     
     
@@ -504,7 +383,7 @@
     
     
     </alumno>
-                                                                                    
+                                                                
     
     
     
@@ -519,18 +398,8 @@
     
     
     
-    
-    
-    
-    
-    
-    <alumno intervenciones="1">
-                                                                                                                                                                        
-        
-        
-        
-        
-        
+    <alumno intervenciones="0">
+                                                                                                                                
         
         
         
@@ -546,12 +415,7 @@
         
         
         <nombre>Pablo</nombre>
-                                                                                                                                                                    
-    
-    
-    
-    
-    
+                                                                                                                            
     
     
     
@@ -567,7 +431,7 @@
     
     
     </alumno>
-                                                                                    
+                                                                
     
     
     
@@ -582,18 +446,8 @@
     
     
     
-    
-    
-    
-    
-    
-    <alumno intervenciones="1">
-                                                                                                                                                                        
-        
-        
-        
-        
-        
+    <alumno intervenciones="0">
+                                                                                                                                
         
         
         
@@ -609,12 +463,7 @@
         
         
         <nombre>Juan María</nombre>
-                                                                                                                                                                    
-    
-    
-    
-    
-    
+                                                                                                                            
     
     
     
@@ -630,7 +479,7 @@
     
     
     </alumno>
-                                                                                    
+                                                                
     
     
     
@@ -645,18 +494,8 @@
     
     
     
-    
-    
-    
-    
-    
-    <alumno intervenciones="1">
-                                                                                                                                                                        
-        
-        
-        
-        
-        
+    <alumno intervenciones="0">
+                                                                                                                                
         
         
         
@@ -672,12 +511,7 @@
         
         
         <nombre>Adrián</nombre>
-                                                                                                                                                                    
-    
-    
-    
-    
-    
+                                                                                                                            
     
     
     
@@ -693,7 +527,7 @@
     
     
     </alumno>
-                                                                                    
+                                                                
     
     
     
@@ -708,18 +542,8 @@
     
     
     
-    
-    
-    
-    
-    
-    <alumno intervenciones="1">
-                                                                                                                                                                        
-        
-        
-        
-        
-        
+    <alumno intervenciones="0">
+                                                                                                                                
         
         
         
@@ -735,12 +559,7 @@
         
         
         <nombre>Juan Jesús</nombre>
-                                                                                                                                                                    
-    
-    
-    
-    
-    
+                                                                                                                            
     
     
     
@@ -756,7 +575,7 @@
     
     
     </alumno>
-                                                                                    
+                                                                
     
     
     
@@ -771,18 +590,8 @@
     
     
     
-    
-    
-    
-    
-    
-    <alumno intervenciones="1">
-                                                                                                                                                                        
-        
-        
-        
-        
-        
+    <alumno intervenciones="0">
+                                                                                                                                
         
         
         
@@ -798,12 +607,7 @@
         
         
         <nombre>Pepe</nombre>
-                                                                                                                                                                    
-    
-    
-    
-    
-    
+                                                                                                                            
     
     
     
@@ -819,7 +623,7 @@
     
     
     </alumno>
-                                                                                    
+                                                                
     
     
     
@@ -834,18 +638,8 @@
     
     
     
-    
-    
-    
-    
-    
-    <alumno intervenciones="1">
-                                                                                                                                                                        
-        
-        
-        
-        
-        
+    <alumno intervenciones="0">
+                                                                                                                                
         
         
         
@@ -861,12 +655,7 @@
         
         
         <nombre>Dani</nombre>
-                                                                                                                                                                    
-    
-    
-    
-    
-    
+                                                                                                                            
     
     
     
@@ -882,7 +671,7 @@
     
     
     </alumno>
-                                                                                    
+                                                                
     
     
     
@@ -897,18 +686,8 @@
     
     
     
-    
-    
-    
-    
-    
-    <alumno intervenciones="1">
-                                                                                                                                                                        
-        
-        
-        
-        
-        
+    <alumno intervenciones="0">
+                                                                                                                                
         
         
         
@@ -924,12 +703,7 @@
         
         
         <nombre>Juanma Saborido</nombre>
-                                                                                                                                                                    
-    
-    
-    
-    
-    
+                                                                                                                            
     
     
     
@@ -945,7 +719,7 @@
     
     
     </alumno>
-                                                                                    
+                                                                
     
     
     
@@ -960,18 +734,8 @@
     
     
     
-    
-    
-    
-    
-    
-    <alumno intervenciones="1">
-                                                                                                                                                                        
-        
-        
-        
-        
-        
+    <alumno intervenciones="0">
+                                                                                                                                
         
         
         
@@ -987,12 +751,7 @@
         
         
         <nombre>Antonio</nombre>
-                                                                                                                                                                    
-    
-    
-    
-    
-    
+                                                                                                                            
     
     
     
@@ -1008,7 +767,7 @@
     
     
     </alumno>
-                                                                                    
+                                                                
     
     
     
@@ -1023,18 +782,8 @@
     
     
     
-    
-    
-    
-    
-    
-    <alumno intervenciones="1">
-                                                                                                                                                                        
-        
-        
-        
-        
-        
+    <alumno intervenciones="0">
+                                                                                                                                
         
         
         
@@ -1050,12 +799,7 @@
         
         
         <nombre>Jossie</nombre>
-                                                                                                                                                                    
-    
-    
-    
-    
-    
+                                                                                                                            
     
     
     
@@ -1071,12 +815,7 @@
     
     
     </alumno>
-                                                                                
-
-
-
-
-
+                                                            
 
 
 
