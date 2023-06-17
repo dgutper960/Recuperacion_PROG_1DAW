@@ -19,68 +19,55 @@ import java.util.Random;
 import java.util.Scanner;
 
 public class SeleccionarAlumnos {
-    /* Este método se utiliza para seleccionar un alumno de un archivo XML y realizar operaciones basadas en la selección */
     public static void seleccionarAlumnos() {
         try {
-            /* Se crea una instancia de la clase File para representar el archivo XML de entrada que contiene la lista de alumnos. */
-            File inputFile = new File("I:\\David\\A recu Programación\\Documentos\\Documentos Pract_7\\Alumnos1DAW.xml");
+            File inputFile = new File("I:\\David\\A recu Programación\\Recuperacion_PROG_1DAW\\src\\Tema_7\\Practica_7\\Alumnos1DAW.xml");
 
-            /* Se crea una instancia de DocumentBuilderFactory para obtener un DocumentBuilder, que se utiliza para analizar y construir un objeto Document a partir del archivo XML de entrada */
+            // Crea el objeto DocumentBuilder para analizar el archivo XML
             DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
-            /* Se analiza el archivo XML utilizando el DocumentBuilder, y se normaliza el documento */
             DocumentBuilder dBuilder = dbFactory.newDocumentBuilder();
             Document doc = dBuilder.parse(inputFile);
             doc.getDocumentElement().normalize();
 
-            /* Se obtiene una lista de nodos del tipo "alumno" utilizando el método getElementsByTagName() del objeto Document. Cada nodo de la lista representa un elemento "alumno" en el archivo XML */
+            // Obtiene la lista de nodos de alumno
             NodeList alumnoList = doc.getElementsByTagName("alumno");
 
-            /* Se crea una lista de elementos Element para almacenar los alumnos candidatos con el menor número de intervenciones. También se inicializa una variable menorIntervenciones con un valor máximo */
+            // Crear una lista de alumnos candidatos con menos intervenciones
             List<Element> candidatos = new ArrayList<>();
             int menorIntervenciones = Integer.MAX_VALUE;
-            /* Se itera sobre la lista de nodos utilizando un bucle for,
-            y se obtiene el elemento Element correspondiente a cada nodo.
-            Se obtiene el número de intervenciones del alumno utilizando el método getAttribute()
-            y se convierte a un entero utilizando Integer.parseInt() */
+
             for (int i = 0; i < alumnoList.getLength(); i++) {
                 Element alumnoElement = (Element) alumnoList.item(i);
                 int intervenciones = Integer.parseInt(alumnoElement.getAttribute("intervenciones"));
-                /* Si el número de intervenciones es menor que menorIntervenciones,
-                se actualiza menorIntervenciones con el nuevo valor
-                y se limpia la lista de candidatos para agregar el nuevo alumno como único candidato.
-                Si el número de intervenciones es igual a menorIntervenciones,
-                se agrega el alumno a la lista de candidatos. */
+
                 if (intervenciones < menorIntervenciones) {
+                    // Se encontró un nuevo mínimo
                     menorIntervenciones = intervenciones;
                     candidatos.clear();
                     candidatos.add(alumnoElement);
                 } else if (intervenciones == menorIntervenciones) {
+                    // Se encontró otro alumno con el mismo número de intervenciones
                     candidatos.add(alumnoElement);
                 }
             }
-            /* Si no hay candidatos disponibles (la lista de candidatos está vacía), se muestra un mensaje en la consola
-             indicando que no hay alumnos disponibles y se retorna del método */
+
             if (candidatos.isEmpty()) {
                 System.out.println("No hay alumnos disponibles");
                 return;
             }
 
-            // Se crea una instancia de Random para generar un número aleatorio
+            // Escoge un alumno aleatorio entre los candidatos
             Random random = new Random();
-            // Se selecciona un alumno aleatorio de la lista de candidatos utilizando el método get()
             Element alumnoSeleccionado = candidatos.get(random.nextInt(candidatos.size()));
-            // Se obtiene el nombre del alumno utilizando getElementsByTagName() y getTextContent()
             String nombreAlumno = alumnoSeleccionado.getElementsByTagName("nombre").item(0).getTextContent();
-            // Mostramos por consola el nombre del alumno seleccionado
+
             System.out.println("Alumno seleccionado: " + nombreAlumno);
             System.out.print("¿Añadir una intervención? (+/0): ");
-            // Creamos una instancia de scanner
             Scanner scanner = new Scanner(System.in);
-            // Se inicializa respuesta con la línea de texto que el usuario introduzca por consola
             String respuesta = scanner.nextLine();
 
             if (respuesta.equalsIgnoreCase("+")) {
-
+                // Añade una intervención al alumno seleccionado
                 int intervenciones = Integer.parseInt(alumnoSeleccionado.getAttribute("intervenciones"));
                 alumnoSeleccionado.setAttribute("intervenciones", String.valueOf(intervenciones + 1));
 
@@ -90,7 +77,7 @@ public class SeleccionarAlumnos {
                 transformer.setOutputProperty(OutputKeys.INDENT, "yes");
 
                 DOMSource source = new DOMSource(doc);
-                StreamResult result = new StreamResult(new File("I:\\David\\A recu Programación\\Documentos\\Documentos Pract_7\\Alumnos1DAW.xml"));
+                StreamResult result = new StreamResult(new File("I:\\David\\A recu Programación\\Recuperacion_PROG_1DAW\\src\\Tema_7\\Practica_7\\Alumnos1DAW.xml"));
                 transformer.transform(source, result);
 
                 System.out.println("Intervención añadida exitosamente");
