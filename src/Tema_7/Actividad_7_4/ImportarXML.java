@@ -8,7 +8,7 @@ import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 import java.io.File;
 
-/** Esta es la clase main donde vamos definir el código para Importar nuestro xml */
+/** Esta es la clase main donde vamos a definir el código para Importar nuestro xml */
 
 public class ImportarXML {
     public static void main(String[] args) {

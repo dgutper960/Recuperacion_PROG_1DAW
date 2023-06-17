@@ -1,6 +1,6 @@
 package Tema_7.Actividad_7_4;
 
-/** Creamos una nueva clase persona  */
+/** Creamos una nueva clase persona con su constructor, getters y setters */
 
 public class Persona {
     String nombre;
