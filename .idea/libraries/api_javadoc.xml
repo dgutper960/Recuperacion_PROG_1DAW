@@ -1,6 +1,8 @@
 <component name="libraryTable">
   <library name="api-javadoc">
-    <CLASSES />
+    <CLASSES>
+      <root url="jar://$USER_HOME$/Documents/objectdb-2.8.8/bin/objectdb.jar!/" />
+    </CLASSES>
     <JAVADOC />
     <SOURCES />
   </library>
