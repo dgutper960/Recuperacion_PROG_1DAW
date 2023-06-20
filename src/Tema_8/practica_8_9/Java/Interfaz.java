@@ -5,6 +5,8 @@ import java.awt.event.ActionListener;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
 
+import static Tema_7.Practica_7.ExportarXML.exportarXML;
+import static Tema_7.Practica_7.ImportarXML.importarXML;
 import static Tema_8.practica_8_9.Java.BaseDatos.*;
 import static Tema_8.practica_8_9.Java.ImportarExportar.*;
 import static Tema_8.practica_8_9.Java.Operaciones.*;
