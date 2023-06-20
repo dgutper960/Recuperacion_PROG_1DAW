@@ -41,7 +41,7 @@ public class Main {
 
         // Creamos una transacción, donde instanciaremos a los alumnos
         em.getTransaction().begin();
-        /*
+
         em.persist(jonathan);
         em.persist(juanJesus);
         em.persist(juanmHerrera);
@@ -53,7 +53,7 @@ public class Main {
         em.persist(pablo);
         em.persist(samuel);
         em.persist(gabriel);
-        */
+
 
         // Ahora realizaremos algunas de las consultas propuestas tanto por nuestro profesor y compañeros de clase
 
