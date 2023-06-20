@@ -12,7 +12,7 @@ import javax.xml.transform.stream.StreamResult;
 import java.io.File;
 
 public class ExportarXML {
-    public static void exportarXML() {
+    public static void exportarXML(String nombreBD, String nombreTabla, String rutaExportarXML) {
         try {
             // Instanciamos un objeto de File y damos la ruta para el archivo xml, el cual, será creado en nuestro paquete de la Práctica
             File inputFile = new File("I:\\David\\A recu Programación\\Recuperacion_PROG_1DAW\\src\\Tema_7\\Practica_7\\Alumnos1DAW.xml");

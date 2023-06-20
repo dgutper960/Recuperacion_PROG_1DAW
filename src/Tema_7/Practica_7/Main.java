@@ -27,10 +27,10 @@ public class Main {
             opcion = scanner.nextInt();
             switch (opcion) {
                 case 1:
-                    importarXML();
+                    importarXML(nombreBD, nombreTabla, rutaImportarXML);
                     break;
                 case 2:
-                    exportarXML();
+                    exportarXML(nombreBD, nombreTabla, rutaExportarXML);
                     break;
                 case 3:
                     seleccionarAlumnos();
