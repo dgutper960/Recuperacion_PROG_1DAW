@@ -5,11 +5,6 @@ package Tema_7.Practica_7;
 
 import java.util.Scanner;
 
-import static Tema_7.Practica_7.SeleccionarAlumnos.seleccionarAlumnos;
-import static Tema_7.Practica_7.ReiniciarIntervenciones.reiniciarIntervenciones;
-import static Tema_7.Practica_7.ExportarXML.exportarXML;
-import static Tema_7.Practica_7.ImportarXML.importarXML;
-
 
 public class Main {
     public static void main(String[] args) {
@@ -25,12 +20,12 @@ public class Main {
             System.out.println();
             System.out.print("Introduce una opción: ");
             opcion = scanner.nextInt();
-            switch (opcion) {
+      /*     switch (opcion) {
                 case 1:
-                    importarXML(nombreBD, nombreTabla, rutaImportarXML);
+                    importarXML();
                     break;
                 case 2:
-                    exportarXML(nombreBD, nombreTabla, rutaExportarXML);
+                    exportarXML();
                     break;
                 case 3:
                     seleccionarAlumnos();
@@ -44,7 +39,7 @@ public class Main {
                 default:
                     System.out.println("Opción no válida");
                     System.out.println();
-            }
+            }*/
         } while (opcion != 5);
     }
 }

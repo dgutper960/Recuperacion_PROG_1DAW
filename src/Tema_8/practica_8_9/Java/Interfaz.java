@@ -408,7 +408,7 @@ public class Interfaz extends Frame {
                 String rutaImportarXML = campoRutaIO.getText();
 
                 // Método que importa el archivo XML
-                importarXML(nombreBD, nombreTabla, rutaImportarXML);
+                importarXML();
                 mostrarMensaje("XML importado a la tabla " + nombreTabla);
             }
         });

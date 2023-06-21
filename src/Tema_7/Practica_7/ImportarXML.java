@@ -10,7 +10,7 @@ import javax.xml.parsers.DocumentBuilderFactory;
 import java.io.File;
 
 public class ImportarXML {
-    public static void importarXML(String nombreBD, String nombreTabla, String rutaImportarXML) {
+    public static void importarXML() {
         try {
             // Creamos el objeto inputFile de tipo File dando la ruta como argumento
             File inputFile = new File("I:\\David\\A recu Programación\\Recuperacion_PROG_1DAW\\src\\Tema_7\\Practica_7\\Alumnos1DAW.xml");
