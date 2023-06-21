@@ -48,6 +48,8 @@ public class MyInterfaz extends JFrame {
         getContentPane().add(panel);
         /** Se agrega el panel al contenedor */
     }
+    /** El método Main está definido aparte, pero podría haberse definido dentro de esta misma clase
+     * de hecho, si no recuerdo mal, en la práctica está así */
 
     /* La práctica de definir completamente los elementos y los eventos asociados antes de agregarlos es una
     convención común en la programación en general y no está limitada a Java.
