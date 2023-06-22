@@ -324,37 +324,44 @@ public class Operaciones {
         }
         return reinicioIntervenciones;
     }
-
+    /** Añadir una persona a la BBDD */
+    /* Los parametros de entrada parámetros representan el nombre de la base de datos, el nombre de la tabla y el nombre del alumno */
     static String alumnoDarAlta(String nombreBD, String nombreTabla, String alumno) {
-
+        // Esta variable almacena el resultado del método
         String resultado = null;
-
+        // Abrimos bloque try
         try {
             // Enlazar con el driver
             Class.forName(DRIVER);
-
+            // Establecer conexión
             Connection con = DriverManager.getConnection(DB_URL, DB_USER, DB_PASSWORD);
+            // Instanciamos un objeto Statament para ejecutar sentencias SQL
             Statement stm = con.createStatement();
-
+            /* Se construye una cadena de consulta SQL utilizando el nombre de la base de datos,
+            el nombre de la tabla y el nombre del alumno.
+            La sentencia es INSERT INTO que inserta el nombre del alumno */
             String query = "INSERT INTO " + nombreBD + "." + nombreTabla + " (alumno, ultima_intervencion) VALUES (?, ?)";
-
+            /* Se crea objeto PreparedStatement para preparar la consulta
+            y se establecen los valores de los parámetros utilizando el método setString */
             try (PreparedStatement pstmt = con.prepareStatement(query)) {
                 pstmt.setString(1, alumno);
                 pstmt.setString(2,"0000-00-00");
+                // Se ejecuta la sentencia con
                 int filasInsertadas = pstmt.executeUpdate();
+                // Si se inserta al menos una fila, resultado se actualiza con la concatenación
                 if (filasInsertadas > 0) {
                     resultado = "El alumno " + alumno + " ha sido dado de alta correctamente";
-                } else {
+                } else { // Si no la concatenación es lka siguiente
                     resultado = "No se pudo dar de alta al alumno " + alumno;
                 }
             }
-
+            // Cerramos los objetos de la conexión y el Statament (consultas SQL)
             stm.close();
             con.close();
-
+        // Capturamos los posibles errores de las siguientes clases
         } catch (SQLException | ClassNotFoundException e) {
             System.err.println("Ha fallado la conexión: " + e.getMessage());
-        }
+        } // damos el retorno
         return resultado;
     }
 
