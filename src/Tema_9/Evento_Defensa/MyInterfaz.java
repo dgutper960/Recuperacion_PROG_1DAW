@@ -8,7 +8,7 @@ import java.awt.event.ActionListener;
 /** Creamos la clase que extiende de JFrame lo que significa que representa una ventana en una aplicación de escritorio*/
 public class MyInterfaz extends JFrame {
 
-    /** Método main  */
+    /** Método main, necesario para que la interfaz esté en uso */
     public static void main(String[] args) {
         /** Se crea un instanca de la clase */
         MyInterfaz aplicacion = new MyInterfaz();
@@ -25,7 +25,7 @@ public class MyInterfaz extends JFrame {
         JPanel panel = new JPanel();
         /** Definimos una etiqueta con un mensaje */
         JLabel label = new JLabel("Interfaz personalizada");
-        /** usamos el método add de panel para añadir la etiqueta */
+        /** Añadimos la etiqueta al panel */
         panel.add(label);
 
         /** Definimos el botón para el evento */
