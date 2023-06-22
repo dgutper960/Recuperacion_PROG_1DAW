@@ -28,7 +28,7 @@ public class ImportarXML {
                 String nombre = alumno.getTextContent();
                 int intervenciones = Integer.parseInt(alumno.getAttribute("intervenciones"));
 
-                // En este prin se procesan los datos importados
+                // En este print se procesan los datos importados
                 System.out.println(nombre + "Intervenciones: " + intervenciones);
             }
         } catch (Exception e) {

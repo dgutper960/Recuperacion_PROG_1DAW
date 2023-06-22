@@ -48,17 +48,6 @@ public class MyInterfaz extends JFrame {
         getContentPane().add(panel);
         /** Se agrega el panel al contenedor */
     }
-    /** El método Main está definido aparte, pero podría haberse definido dentro de esta misma clase
-     * de hecho, si no recuerdo mal, en la práctica está así */
 
-    /* La práctica de definir completamente los elementos y los eventos asociados antes de agregarlos es una
-    convención común en la programación en general y no está limitada a Java.
-    Esta convención se utiliza para mantener un código organizado y estructurado,
-    facilitando la comprensión y el mantenimiento del código a medida que el proyecto crece.
-
-    Al definir completamente los elementos y los eventos antes de agregarlos,
-    se sigue un enfoque más estructurado y modular en el desarrollo de aplicaciones.
-    Esto permite separar la lógica de los elementos y los eventos de la interfaz gráfica de usuario,
-    lo que facilita la reutilización del código y la implementación de cambios o mejoras en el futuro. */
 }
 
